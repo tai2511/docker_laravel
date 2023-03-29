@@ -1,0 +1,61 @@
+#header {
+    margin: 30px 0;
+}
+
+#header .logo {
+    margin-left: auto;
+}
+#header .header-icon {
+    width: 50px;
+    height: 50px;
+}
+#header .search_icon {
+    background-color: var(--primary-color);;
+    border-radius: 0 25px 25px 25px;
+}
+#header .input-group-append {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+#header #header-search{
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 18px;
+    padding-right: 55px;
+    text-align: center;
+}
+
+#header .active_user_container .header-icon {
+    background-color: #ffffff;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#header .header_active_user {
+    width: 150px;
+    position: relative;
+}
+
+#header .header_active_user img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-radius: 10px;
+}
+
+#header .header_active_user_select {
+    border: unset;
+    appearance: none;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+    width: 150px;
+    height: 50px;
+    padding-left: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}

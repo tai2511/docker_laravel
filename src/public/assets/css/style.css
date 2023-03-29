@@ -1,0 +1,22 @@
+@import "bootstrap.min.css";
+@import "blocks/header.css";
+@import "clients/projects.css";
+
+:root {
+    --primary-color: #589BD4;
+}
+
+body {
+    background: rgb(197,230,241);
+    background: linear-gradient(80deg, rgba(197,230,241,1) 0%, rgba(192,215,242,1) 51%, rgba(192,214,242,1) 81.8%, rgba(177,221,255,1) 100%);
+}
+
+.content {
+    width: calc(100% - 210px);
+    margin-left: 94px;
+    height: 608px;
+    background-color: #d0f1f7;
+    position: relative;
+    border-radius: 38px;
+    display: flex;
+}

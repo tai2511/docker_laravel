@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('project');
 });
+
+Route::resource('project', ProjectController::class);
+
+//Route::post('home', [ProjectController::class, 'post'])->name('post.project');
+//
+//
+//Route::post('post_test', function () {
+//    return "Post Test";
+//});
+//
+//Route::prefix('project')->group(function () {
+//    Route::get('/', [ProjectController::class, 'index']);
+//    Route::get('/{id}/{slug}', [ProjectController::class, 'get']);
+//});
