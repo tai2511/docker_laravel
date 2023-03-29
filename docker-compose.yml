@@ -6,22 +6,22 @@ services:
       - "8000:80"
     volumes:
       - ./src:/var/www/html
-    depends_on:
-      - db
-      - redis
-      - elasticsearch
-  db:
-    image: mysql:latest
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_DATABASE: myapp
-      MYSQL_USER: user
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
-  redis:
-    image: redis:6
-    ports:
-      - "6379:6379"
-  elasticsearch:
-    image: elasticsearch:7.17.9
+#    depends_on:
+#      - db
+#      - redis
+#      - elasticsearch
+#  db:
+#    image: mysql:latest
+#    ports:
+#      - "3306:3306"
+#    environment:
+#      MYSQL_DATABASE: laravel
+#      MYSQL_USER: user
+#      MYSQL_PASSWORD: secret
+#      MYSQL_ROOT_PASSWORD: secret
+#  redis:
+#    image: redis:6
+#    ports:
+#      - "6379:6379"
+#  elasticsearch:
+#    image: elasticsearch:7.17.9
