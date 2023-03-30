@@ -1,2 +1,5 @@
 #!/bin/bash
 service httpd start
+cd /var/www/html
+php artisan cache:clear
+php artisan config:cache
