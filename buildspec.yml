@@ -20,8 +20,6 @@ phases:
   post_build:
     commands:
       - echo Adding additional files to artifact
-      - cd ../
-      - ls -l
       - zip -r ../artifacts/application.zip .
       - cd /root/.composer/cache
       - zip -r ../../artifacts/composer_cache.zip .
