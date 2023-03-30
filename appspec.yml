@@ -12,7 +12,7 @@ hooks:
     - location: code_deploy/configure-apache-vhost
       timeout: 300
       runas: root
-    - location: code_deploy/configure-apache-vhost
+    - location: code_deploy/set_permission_log_folder
       timeout: 300
       runas: ec2-user
     - location: code_deploy/start_server
