@@ -27,6 +27,6 @@ phases:
       - zip -r ../../artifacts/config.zip .
 artifacts:
   files:
-    - ../artifacts/application.zip
-    - ../artifacts/composer_cache.zip
-    - ../artifacts/config.zip
+    - artifacts/application.zip
+    - artifacts/composer_cache.zip
+    - artifacts/config.zip

@@ -4,13 +4,13 @@ files:
   - source: src/
     destination: /var/www/html/
     overwrite: yes
-  - source: /root/artifacts/application.zip
+  - source: artifacts/application.zip
     destination: /var/www/html/
     overwrite: yes
-  - source: /root/artifacts/composer_cache.zip
+  - source: artifacts/composer_cache.zip
     destination: /root/.composer/cache
     overwrite: yes
-  - source: /root/artifacts/config.zip
+  - source: artifacts/config.zip
     destination: /root/.config
     overwrite: yes
 hooks:
