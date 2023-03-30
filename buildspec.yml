@@ -20,6 +20,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: base_dir
   name: pm_app
-  discard-paths: no
