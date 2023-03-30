@@ -17,3 +17,11 @@ phases:
       - php artisan config:cache
       - php artisan route:cache
       - php artisan view:cache
+  after_build:
+    commands:
+      - echo Adding additional files to artifact
+      - zip -r ../artifacts/application.zip .
+      - cd /root/.composer/cache
+      - zip -r ../../artifacts/composer_cache.zip .
+      - cd /root/.config
+      - zip -r ../../artifacts/config.zip .
