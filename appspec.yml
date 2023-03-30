@@ -7,12 +7,6 @@ files:
   - source: artifacts/application.zip
     destination: /var/www/html/
     overwrite: yes
-  - source: artifacts/composer_cache.zip
-    destination: /root/.composer/cache
-    overwrite: yes
-  - source: artifacts/config.zip
-    destination: /root/.config
-    overwrite: yes
 hooks:
   BeforeInstall:
     - location: code_deploy/install_dependencies

@@ -21,12 +21,6 @@ phases:
     commands:
       - echo Adding additional files to artifact
       - zip -r ../artifacts/application.zip .
-      - cd /root/.composer/cache
-      - zip -r ../../artifacts/composer_cache.zip .
-      - cd /root/.config
-      - zip -r ../../artifacts/config.zip .
 artifacts:
   files:
     - artifacts/application.zip
-    - artifacts/composer_cache.zip
-    - artifacts/config.zip
