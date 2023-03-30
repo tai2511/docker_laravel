@@ -66,7 +66,7 @@
                     starred
                 </div>
                 <div class="td th" style="width: 20%;">
-                    name
+                    name - here
                 </div>
                 <div class="td th" style="width: 20%;">
                     client
