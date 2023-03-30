@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  variables:
+    ARTIFACTS_LOCATION: "/codebuild/output/my-app.zip"
+
 phases:
   install:
     runtime-versions:
@@ -20,7 +24,4 @@ phases:
   post_build:
     commands:
       - echo Adding additional files to artifact
-      - zip -r ../artifacts/application.zip .
-artifacts:
-  files:
-    - artifacts/application.zip
+      - zip -r $ARTIFACTS_LOCATION .
