@@ -13,7 +13,7 @@ hooks:
       timeout: 50000
       runas: root
       environment:
-        - ARTIFACTS_LOCATION: "/opt/codedeploy-agent/deployment-root/deployment-instructions/my-app.zip"
+        - ARTIFACTS_LOCATION: "/opt/codedeploy-agent/deployment-root/deployment-instructions/"
   ApplicationStart:
     - location: code_deploy/configure-apache-vhost
       timeout: 300
