@@ -1,9 +1,9 @@
 #!/bin/bash
 sudo tee /etc/httpd/conf.d/myapp.conf > /dev/null <<EOF
 <VirtualHost *:80>
-    ServerName 54.169.128.35
-    DocumentRoot /var/www/html/src/public
-    <Directory /var/www/html/src/public>
+    ServerName 13.250.107.105
+    DocumentRoot /var/www/html/public
+    <Directory /var/www/html/public>
         AllowOverride All
         Order allow,deny
         Allow from all
