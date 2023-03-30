@@ -5,14 +5,14 @@ phases:
     runtime-versions:
       php: 7.4
     commands:
-      - yum -y install httpd
+      - ls -la
       - echo Installing dependencies...
-      - cd src/
+      - cd src
       - composer install
   build:
     commands:
       - echo Building Laravel application...
-      - cd src/
+      - cd src
       - cp .env.example .env
       - php artisan key:generate
       - php artisan migrate --force
