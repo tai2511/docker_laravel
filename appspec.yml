@@ -1,19 +1,13 @@
 version: 0.0
 os: linux
-#files:
-#  - source: src/
-#    destination: /var/www/html/
-#    overwrite: yes
-#  - source: artifacts/application.zip
-#    destination: /var/www/html/
-#    overwrite: yes
+files:
+  - source: /
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
     - location: code_deploy/install_dependencies
       timeout: 50000
       runas: root
-      environment:
-        - ARTIFACTS_LOCATION: "/opt/codedeploy-agent/deployment-root/deployment-instructions/"
   ApplicationStart:
     - location: code_deploy/configure-apache-vhost
       timeout: 300

@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    ARTIFACTS_LOCATION: "/codebuild/output/my-app.zip"
-
 phases:
   install:
     runtime-versions:
@@ -21,7 +17,3 @@ phases:
       - php artisan config:cache
       - php artisan route:cache
       - php artisan view:cache
-  post_build:
-    commands:
-      - echo Adding additional files to artifact
-      - zip -r $ARTIFACTS_LOCATION .
