@@ -3,3 +3,19 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: code_deploy/install_dependencies
+      timeout: 50000
+      runas: root
+  ApplicationStart:
+    - location: code_deploy/configure-apache-vhost
+      timeout: 300
+      runas: root
+    - location: code_deploy/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: code_deploy/stop_server
+      timeout: 300
+      runas: root

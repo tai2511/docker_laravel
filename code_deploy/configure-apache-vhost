@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo tee /etc/httpd/conf.d/myapp.conf > /dev/null <<EOF
+<VirtualHost *:80>
+    ServerName 54.169.128.35
+    DocumentRoot /var/www/html/src/public
+    <Directory /var/www/html/src/public>
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+        Require all granted
+      </Directory>
+    ErrorLog /var/log/httpd/myapp_error.log
+</VirtualHost>
+EOF
