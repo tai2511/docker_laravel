@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       php: 7.4
     commands:
+      - yum -y install httpd
       - echo Installing dependencies...
       - cd /var/www/html
       - composer install
