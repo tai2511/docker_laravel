@@ -7,12 +7,12 @@ phases:
     commands:
       - yum -y install httpd
       - echo Installing dependencies...
-      - cd /var/www/html
+      - cd /var/www/html/src
       - composer install
   build:
     commands:
       - echo Building Laravel application...
-      - cd /var/www/html
+      - cd /var/www/html/src
       - cp .env.example .env
       - php artisan key:generate
       - php artisan migrate --force
