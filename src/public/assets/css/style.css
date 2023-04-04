@@ -11,6 +11,17 @@ body {
     background: linear-gradient(80deg, rgba(197,230,241,1) 0%, rgba(192,215,242,1) 51%, rgba(192,214,242,1) 81.8%, rgba(177,221,255,1) 100%);
 }
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 .content {
     width: calc(100% - 210px);
     margin-left: 94px;

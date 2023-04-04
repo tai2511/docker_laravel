@@ -19,7 +19,7 @@ class ProjectFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name,
+            'name' => $this->faker->name(7),
             'description' => $this->faker->text,
             'project_key' => Str::random(8),
             'project_lead_id' => $this->faker->numberBetween(1, 8),

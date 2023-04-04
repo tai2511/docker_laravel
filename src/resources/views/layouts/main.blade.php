@@ -17,6 +17,7 @@
             </div>
         </main>
         @include('layouts.blocks.footer')
+        <script src="{{  asset('assets/js/jquery.js')  }}"></script>
         @yield('js')
     </body>
 </html>
