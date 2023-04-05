@@ -1,10 +1,9 @@
 #header {
-    margin: 2.57vh 0;
+    margin: 30px 0;
 }
 
 #header .logo {
-    margin-left: 14.8vw;
-    margin-right: 16.9vw;
+    margin-left: auto;
 }
 #header .header-icon {
     width: 50px;
@@ -14,27 +13,10 @@
     background-color: var(--primary-color);;
     border-radius: 0 25px 25px 25px;
 }
-
-#header .header-search {
-    width: 31.25vw;
-    position: relative;
-    margin-right: 13.54vw;
-}
-
-#header .header-search input {
-    width: 100%;
-}
-
 #header .input-group-append {
     position: absolute;
     top: 0;
-    right: 0;
-}
-
-#header .active_user_container .header-icon {
-    background-color: #ffffff;
-    margin-right: 20px;
-    border-radius: 10px;
+    right: 15px;
 }
 
 #header #header-search{
@@ -46,6 +28,11 @@
     text-align: center;
 }
 
+#header .active_user_container .header-icon {
+    background-color: #ffffff;
+    margin-right: 20px;
+    border-radius: 10px;
+}
 
 #header .header_active_user {
     width: 150px;
