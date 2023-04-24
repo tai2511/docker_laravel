@@ -23,9 +23,9 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 .content {
-    margin-right: 5.47vw;
-    margin-left: 5.47vw;
-    height: 85vh;
+    width: calc(100% - 210px);
+    margin-left: 94px;
+    height: 608px;
     background-color: #d0f1f7;
     position: relative;
     border-radius: 38px;
