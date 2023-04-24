@@ -1,5 +1,5 @@
 <header>
-    <div id="header">
+    <div id="header" class="row">
         <div class="col-md-3">
             <div class="logo header-icon">
                 <img src="{{ asset('assets/images/header/logo.svg') }}" alt="">
