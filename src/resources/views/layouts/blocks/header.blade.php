@@ -5,19 +5,15 @@
                 <img src="{{ asset('assets/images/header/logo.svg') }}" alt="">
             </div>
         </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form-control" id="header-search" placeholder="Search">
+        <div class="header-search">
+            <input type="text" id="header-search" placeholder="Search">
             <div class="input-group-append">
                 <div class="search_icon header-icon d-flex justify-content-center align-items-center" >
                     <img src="{{ asset('assets/images/header/search_icon.svg') }}">
                 </div>
             </div>
         </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-4 d-flex active_user_container">
+        <div class="d-flex active_user_container">
             <div class="header-icon">
                 <img src="{{ asset('assets/images/header/notification.svg') }}" width="50px">
             </div>
