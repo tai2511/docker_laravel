@@ -16,8 +16,6 @@ class CreateSprintsTable extends Migration
         Schema::create('sprints', function (Blueprint $table) {
             $table->id();
             $table->string('name', 250)->nullable();
-            $table->unsignedBigInteger('created_by')->nullable();
-            $table->unsignedBigInteger('updated_by')->nullable();
             $table->timestamp('start_date');
             $table->timestamp('finish_date');
             $table->tinyInteger('active')->default(1);

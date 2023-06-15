@@ -17,8 +17,6 @@ class CreateClientsTable extends Migration
             $table->id();
             $table->string('name', 250)->nullable();
             $table->string('description', 250)->nullable();
-            $table->unsignedBigInteger('created_by')->nullable();
-            $table->unsignedBigInteger('updated_by')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();
         });

@@ -22,9 +22,10 @@ class CreateAttributesTable extends Migration
             $table->timestamp('updated_date')->nullable();
             $table->tinyInteger('active')->nullable();
             $table->string('default_format', 250)->nullable();
-            $table->integer('issue_attribute_category_id')->nullable();
+            $table->integer('attribute_category_id')->nullable();
             $table->string('icon', 100)->nullable();
             $table->string('attribute_key', 100)->nullable();
+
         });
     }
 

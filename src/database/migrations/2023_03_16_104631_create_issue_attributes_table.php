@@ -18,6 +18,7 @@ class CreateIssueAttributesTable extends Migration
             $table->unsignedBigInteger('attribute_id');
             $table->timestamps();
         });
+
     }
 
     /**

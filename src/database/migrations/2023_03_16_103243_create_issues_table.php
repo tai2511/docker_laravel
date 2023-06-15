@@ -33,6 +33,7 @@ class CreateIssuesTable extends Migration
             $table->string('issue_key', 100)->unique()->nullable();
             $table->foreign('assignee_id')->references('id')->on('users');
             $table->timestamps();
+
         });
     }
 

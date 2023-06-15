@@ -19,8 +19,6 @@ class CreateProjectsTable extends Migration
             $table->text('description')->nullable();
             $table->string('project_key', 100)->nullable();
             $table->bigInteger('project_lead_id')->nullable();
-            $table->unsignedBigInteger('created_by')->nullable();
-            $table->unsignedBigInteger('updated_by')->nullable();
             $table->timestamp('start_date')->nullable();
             $table->timestamp('finish_date')->nullable();
             $table->tinyInteger('active')->default(1);

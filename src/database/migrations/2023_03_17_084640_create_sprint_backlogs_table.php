@@ -17,6 +17,7 @@ class CreateSprintBacklogsTable extends Migration
             $table->bigInteger('sprint_id');
             $table->string('backlog_id', 100);
             $table->timestamps();
+
         });
     }
 

@@ -17,6 +17,7 @@ class CreateProjectSprintsTable extends Migration
             $table->bigInteger('project_id');
             $table->bigInteger('sprint_id');
             $table->timestamps();
+
         });
     }
 

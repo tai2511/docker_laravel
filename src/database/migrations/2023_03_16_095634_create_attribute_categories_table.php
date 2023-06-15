@@ -22,6 +22,7 @@ class CreateAttributeCategoriesTable extends Migration
             $table->timestamp('updated_date')->nullable();
             $table->tinyInteger('active')->nullable();
             $table->string('attribute_category_key', 100)->nullable();
+
         });
     }
 

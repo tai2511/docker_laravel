@@ -23,6 +23,7 @@ class CreateProjectGroupPermissionsTable extends Migration
             $table->tinyInteger('is_default')->default(0);
             $table->bigInteger('project_id')->nullable();
             $table->timestamps();
+
         });
     }
 

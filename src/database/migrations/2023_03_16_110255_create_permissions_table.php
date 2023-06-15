@@ -23,6 +23,7 @@ class CreatePermissionsTable extends Migration
             $table->tinyInteger('active')->default(1);
             $table->foreign('group_permission_id')->references('id')->on('group_permissions');
             $table->timestamps();
+
         });
     }
 
